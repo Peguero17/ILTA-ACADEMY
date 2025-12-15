@@ -1,0 +1,14 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Cache
+.cache/
+**/.cache/
+
+# Build
+dist/
+build/
+
+# Env
+.env

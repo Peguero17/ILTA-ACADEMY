@@ -1,0 +1,254 @@
+.nosotros-page {
+  min-height: 100vh;
+}
+
+.nosotros-hero {
+  background: var(--primary-blue);
+  color: white;
+  padding: 30px 0 30px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .nosotros-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue-dark) 0%,
+    var(--primary-blue) 100%
+  );
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.historia-section {
+  background: var(--card-bg);
+}
+
+.historia-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.historia-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.historia-text p {
+  margin-bottom: 1.5rem;
+}
+
+.historia-text strong {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.mision-vision-section {
+  background: var(--bg-secondary);
+}
+
+.mv-card {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+}
+
+.mision-card {
+  border-top: 4px solid var(--primary-blue);
+}
+
+.vision-card {
+  border-top: 4px solid var(--primary-blue-light);
+}
+
+.mv-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mv-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.mv-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.valores-section {
+  background: var(--card-bg);
+}
+
+.valor-card {
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 3px solid var(--primary-blue);
+}
+
+.valor-card:hover {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--primary-blue-light) 100%
+  );
+  color: white;
+  transform: translateY(-5px);
+}
+
+.valor-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.valor-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.valor-card p {
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.alianzas-section {
+  background: var(--bg-secondary);
+}
+
+.alianzas-content {
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.alianza-card {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.alianza-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+}
+
+.alianza-card p {
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.alianza-card strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  background: var(--card-bg);
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary-blue);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.estadisticas-section {
+  background: var(--card-bg);
+  color: rgb(0, 0, 0);
+}
+
+.estadisticas-section .section-title {
+  color: #202020;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2.5rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--primary-blue-light) 100%
+  );
+  color: white;
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #000000 15%, #d8d8d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .mv-card {
+    padding: 2rem;
+  }
+
+  .partners-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
